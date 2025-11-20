@@ -9,8 +9,8 @@
 	- 引数: なし
 	- 戻り値: 入った金額
 - 商品を買う
-	-  引数: "coke" | "water" | "tea" | "coffee"など商品名
-	- 戻り値: True | False 成功したか
+	-  引数: `"coke" | "water" | "tea" | "coffee"` など商品名
+	- 戻り値: `True | False` 成功したか
 - お釣りを出す
 	- 金額 なければ0
 
@@ -123,7 +123,7 @@ def test_insert_negative_money():
 +            return self.balance
 ```
 
-テストケース: 
+テストケース: 投入できる金額は整数
 ```python
 def test_insert_invalid_money():
     invaild_money = [0.5, "100", None, [], {}]
